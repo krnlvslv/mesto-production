@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-B2N3_BjN.js"></script>
+    <script type="module" crossorigin src="./assets/index-Dy-WHtqq.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DRxO4-9t.css">
   </head>
   <body class="page">
@@ -52,7 +52,9 @@
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
                 minlength="2"
+                maxlength="40"
                 required
+                pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
@@ -66,6 +68,7 @@
                 class="popup__input popup__input_type_description"
                 placeholder="Занятие"
                 minlength="2"
+                maxlength="200"
                 required
               />
             </label>
@@ -96,7 +99,9 @@
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
                 minlength="2"
+                maxlength="30"
                 required
+                pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
@@ -167,7 +172,7 @@
       <div class="popup popup_type_info">
         <div class="popup__content popup__content_content_info">
           <button type="button" class="popup__close"></button>
-          <h3 class="popup__title">Статистика</h3>
+          <h3 class="popup__title">Статистика карточек</h3>
           <dl class="popup__info"></dl>
           <h4 class="popup__text">Популярные карточки:</h4>
           <ul class="popup__list"></ul>
